@@ -26,8 +26,8 @@ Make sure you have the following installed:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/thai-id-ocr-project.git
-cd thai-id-ocr-project
+git clone https://github.com/your-username/thai_id_card.git
+cd thai_id_card
 ```
 
 2. Create a virtual environment:
