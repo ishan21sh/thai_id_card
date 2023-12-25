@@ -104,8 +104,8 @@ def ocr(d):
     text_string = ' '.join(d['text'])
     
     # Extracting name, identification number, and dates
-    name = name_pattern.search(text_string).group()
-    identification_number = identification_pattern.search(text_string).group()
+    name = name_pattern.search(text_string).group() if name_pattern.search(text_string) != None else ""
+    identification_number = identification_pattern.search(text_string).group() if identification_pattern.search(text_string) != None else ""
     dates = date_pattern.findall(text_string)
 
     try:
