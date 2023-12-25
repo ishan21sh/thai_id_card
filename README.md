@@ -80,6 +80,9 @@ python manage.py runserver
 3. Save the ID card information to the database.
 4. Use the update and delete functionalities as needed.
 
+## Deployed Website
+[Live Demo](https://web-production-7aa3.up.railway.app/)
+
 ## Contribution
 
 Feel free to contribute to the project by opening issues or creating pull requests. Your feedback and suggestions are highly appreciated.
