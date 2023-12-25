@@ -33,7 +33,7 @@ def submit_id(request, image_id):
     # Extract text from the uploaded image using Tesseract OCR
     image_instance = ID_Image.objects.get(id=image_id)
     path = str(settings.MEDIA_ROOT)
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     pathz = path + "/" + str(image_instance.id_img)
     text = pytesseract.image_to_string(Image.open(pathz))
     d = pytesseract.image_to_data(pathz, output_type=Output.DICT)
